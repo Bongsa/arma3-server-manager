@@ -1,0 +1,18 @@
+[
+  {
+    "workshop_id": "11111",
+    "name": "Client Test",
+    "type": "client",
+    "classification": "test",
+    "link_name": "@client_test",
+    "local_path": "/unused/11111"
+  },
+  {
+    "workshop_id": "22222",
+    "name": "Both Test",
+    "type": "both",
+    "classification": "test",
+    "link_name": "@both_test",
+    "local_path": "/unused/22222"
+  }
+]

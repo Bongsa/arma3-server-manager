@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodic Arma 3 update check
+
+[Timer]
+OnCalendar=*-*-* 05:15:00
+RandomizedDelaySec=20m
+Persistent=true
+Unit=arma3-update.service
+
+[Install]
+WantedBy=timers.target

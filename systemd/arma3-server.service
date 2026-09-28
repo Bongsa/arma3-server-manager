@@ -1,0 +1,22 @@
+[Unit]
+Description=Arma 3 Dedicated Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=arma3
+Group=arma3
+WorkingDirectory=/opt/arma3-manager
+ExecStart=/opt/arma3-manager/arma3-server.sh run
+Restart=on-failure
+RestartSec=10s
+TimeoutStopSec=45s
+KillSignal=SIGTERM
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/arma3 /opt/arma3-manager/runtime
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Arma 3 update check (never interrupts a running server)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=arma3
+Group=arma3
+WorkingDirectory=/opt/arma3-manager
+ExecStart=/opt/arma3-manager/arma3-server.sh --defer-if-running update
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/arma3 /opt/arma3-manager/runtime
+

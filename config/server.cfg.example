@@ -1,0 +1,8 @@
+hostname = "Arma 3 Server";
+password = "";
+passwordAdmin = "CHANGE_ME";
+maxPlayers = 32;
+verifySignatures = 2;
+kickDuplicate = 1;
+persistent = 1;
+
