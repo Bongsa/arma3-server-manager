@@ -1,4 +1,4 @@
-# Arma 3 Dedicated Server Manager
+# Arma 3 Dedicated Server Manager (Vibecoded)
 
 A production-oriented manager for an Arma 3 Dedicated Server on Linux. It installs SteamCMD and app `233780`, imports original Arma Launcher presets, manages Workshop content for app `107410`, handles Linux case sensitivity, creates symlinks and signature keys, and starts the server without unsafe string evaluation.
 
